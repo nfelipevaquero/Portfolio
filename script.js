@@ -1,23 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-
-    const appearanceOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearanceOnScroll = new IntersectionObserver(function(entries, appearanceOnScroll) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-            appearanceOnScroll.unobserve(entry.target);
-        });
-    }, appearanceOptions);
-
-    sections.forEach(section => {
-        section.style.transition = "all 0.8s ease-out";
-        appearanceOnScroll.observe(section);
+    const mainContent = document.querySelector('.main-content');
+    const sidebar = document.querySelector('.sidebar');
+    
+    // Animación de entrada suave
+    [sidebar, mainContent].forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = index === 0 ? 'translateX(-20px)' : 'translateX(20px)';
+        el.style.transition = 'all 0.8s ease-out';
+        
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 200 * index);
     });
 });

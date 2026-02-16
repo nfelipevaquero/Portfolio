@@ -3,71 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Felipe | Portfolio</title>
+    <title>Nicolás Felipe | Portafolio Profesional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>NICOLÁS FELIPE</h1>
-        <p class="subtitle">Técnico Informático | Desarrollador Multiplataforma (DAM)</p>
-        <div class="contact-info">
-            <p><i class="fa-solid fa-location-dot"></i> Barcelona, España | <i class="fa-solid fa-envelope"></i> nfelipevaquero@gmail.com</p>
-        </div>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p>Técnico informático especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Enfocado en la optimización de procesos mediante código limpio y la resolución eficiente de incidencias técnicas en entornos de red.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Desarrollo</h3>
-                    <p>Dominio de Java y Python aplicado a lógica de negocio y POO.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>Web</h3>
-                    <p>Interfaces dinámicas con HTML5, CSS3 y JavaScript (JS).</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-database"></i>
-                    <h3>Datos</h3>
-                    <p>Diseño de bases de datos SQL y administración de suites ofimáticas.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-server"></i>
-                    <h3>Sistemas</h3>
-                    <p>Configuración de redes locales y administración de Windows/Linux.</p>
-                </div>
+    <div class="resume-wrapper">
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <i class="fa-solid fa-user-gear"></i>
             </div>
-        </section>
+            
+            <section class="contact-section">
+                <h3>CONTACTO</h3>
+                <p><i class="fa-solid fa-phone"></i> (+34) 639 16 155 77</p>
+                <p><i class="fa-solid fa-envelope"></i> nfelipevaquero@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Barcelona (España)</p>
+            </section>
 
-        <section id="projects">
-            <h2>Proyectos y Experiencia</h2>
-            <div class="project-card">
-                <div>
-                    <h3>Sistemas y Redes (SMR)</h3>
-                    <p>Soporte técnico, montaje de equipos y mantenimiento de infraestructuras de red.</p>
+            <section class="languages-section">
+                <h3>IDIOMAS</h3>
+                <ul>
+                    <li>Español: Nativo</li>
+                    <li>Catalán: Nativo</li>
+                    <li>Inglés: B2 (Intermedio-Alto)</li>
+                </ul>
+            </section>
+
+            <section class="links-section">
+                <h3>SITIO WEB</h3>
+                <p><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+                <p><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></p>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>NICOLÁS FELIPE</h1>
+                <p class="tagline">Técnico Informático | Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
+            </header>
+
+            <section>
+                <h2 class="section-title">SOBRE MÍ</h2>
+                <p>Técnico informático especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Enfocado en la optimización de procesos mediante código limpio y la resolución eficiente de incidencias técnicas en entornos de red.</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">EDUCACIÓN</h2>
+                <div class="edu-item">
+                    <h4>2025 Estudios actuales</h4>
+                    <p><strong>CFGS Desarrollo de Aplicaciones Multiplataforma</strong></p>
+                    <p>Centre d'estudis Politècnics</p>
                 </div>
-                <a href="#" class="btn">Ver Repositorio</a>
-            </div>
-            <div class="project-card">
-                <div>
-                    <h3>Desarrollo Multiplataforma (DAM)</h3>
-                    <p>Proyectos de programación y bases de datos desarrollados en el CFGS.</p>
+                <div class="edu-item">
+                    <h4>2025 Grado Medio</h4>
+                    <p><strong>Ciclo Formativo Grado Medio Sistemas Microinformáticos y Redes</strong></p>
+                    <p>Escola del Treball Barcelona</p>
+                    <p class="fct"><em>Prácticas FCT: Soporte técnico, montaje de equipos y mantenimiento de infraestructuras de red.</em></p>
                 </div>
-                <a href="#" class="btn">Ver Repositorio</a>
-            </div>
-        </section>
+            </section>
+
+            <section>
+                <h2 class="section-title">HABILIDADES TÉCNICAS</h2>
+                <div class="skills-container">
+                    <div class="skill-box"><strong>Sistemas y Redes:</strong> Configuración de redes y administración Win/Linux.</div>
+                    <div class="skill-box"><strong>Datos y Gestión:</strong> Diseño de bases de datos SQL y ofimática.</div>
+                    <div class="skill-box"><strong>Desarrollo Software:</strong> Dominio de Java y Python (POO).</div>
+                    <div class="skill-box"><strong>Desarrollo Web:</strong> HTML5, CSS3 y JavaScript (JS).</div>
+                </div>
+            </section>
+        </main>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
