@@ -1,0 +1,20 @@
+quin d’aquests animals és un rèptil? ; (A) granota ; (B) llangardaix ; (C) tritó ; B
+quin rèptil canvia de color per camuflar-se? ; (A) camaleó ; (B) serp ; (C) cocodril ; A
+quin d’aquests animals és un amfibi? ; (A) tortuga ; (B) granota ; (C) llangardaix ; B
+quin rèptil té una closca dura que el protegeix? ; (A) tortuga ; (B) iguana ; (C) salamandra ; A
+quin d’aquests rèptils pot fer diversos metres i viu als rius? ; (A) cocodril ; (B) gec ; (C) serp coral ; A
+quin animal comença la vida com a capgròs a l’aigua? ; (A) granota ; (B) llangardaix ; (C) tortuga ; A
+quin d’aquests animals té la pell humida i necessita aigua per reproduir-se? ; (A) amfibi ; (B) rèptil ; (C) ocell ; A
+quina serp és coneguda pel cascavell a la cua? ; (A) cobra ; (B) escurçó ; (C) serp de cascavell ; C
+quin d’aquests animals es pot desprendre de la cua per escapar? ; (A) llangardaix ; (B) granota ; (C) serp ; A
+quin rèptil té una llengua llarga i enganxosa per atrapar insectes? ; (A) camaleó ; (B) cocodril ; (C) tortuga ; A
+quin d’aquests animals sol ser verinós? ; (A) moltes granotes fletxa ; (B) ovella ; (C) gallina ; A
+quin rèptil té el cos allargat i sense potes? ; (A) serp ; (B) iguana ; (C) salamandra ; A
+quin d’aquests animals sol viure en aiguamolls càlids? ; (A) cocodril ; (B) lleó ; (C) ós polar ; A
+quin amfibi és conegut pel seu cant a les nits de pluja? ; (A) granota ; (B) tortuga ; (C) camaleó ; A
+quin d’aquests rèptils és molt ràpid al desert? ; (A) sargantana ; (B) pingüí ; (C) dofí ; A
+quin animal té la pell coberta d’escates dures? ; (A) rèptil ; (B) mamífer ; (C) ocell ; A
+quin d’aquests animals respira per la pell a més de pels pulmons? ; (A) amfibi ; (B) ocell ; (C) peix ; A
+quin rèptil és conegut per la seva mossegada molt forta i les dents esmolades? ; (A) cocodril ; (B) ovella ; (C) conill ; A
+quin d’aquests rèptils sol prendre el sol sobre les roques? ; (A) llangardaix ; (B) tauró ; (C) flamenc ; A
+quin amfibi té sovint la pell llisa i viu a prop de basses? ; (A) granota ; (B) àguila ; (C) cavall ; A

@@ -1,0 +1,20 @@
+quin d’aquests animals és un insecte? ; (A) abella ; (B) aranya ; (C) cargol ; A
+quantes potes tenen la majoria d’insectes adults? ; (A) quatre ; (B) sis ; (C) vuit ; B
+quin d’aquests animals té vuit potes? ; (A) papallona ; (B) aranya ; (C) formiga ; B
+quin insecte és clau per a la pol·linització de moltes plantes? ; (A) abella ; (B) mosquit ; (C) panerola ; A
+quin d’aquests animals produeix seda en la fase de larva? ; (A) cuc de seda ; (B) cuc de terra ; (C) escarabat ; A
+quin insecte s’alimenta de sang i pot transmetre malalties? ; (A) marieta ; (B) mosquit ; (C) llagosta ; B
+quin d’aquests animals té una closca dura i s’enrotlla per protegir-se? ; (A) porquet de sant Antoni ; (B) papallona ; (C) libèl·lula ; A
+quin insecte passa per les fases d’ou, larva, pupa i adult? ; (A) papallona ; (B) llagosta ; (C) escorpí ; A
+quin d’aquests animals és un mol·lusc? ; (A) cargol ; (B) formiga ; (C) abella ; A
+quin insecte és conegut per treballar en colònies i construir formiguers? ; (A) formiga ; (B) papallona ; (C) abella solitària ; A
+quin d’aquests invertebrats té tentacles i pot picar al mar? ; (A) medusa ; (B) zebra ; (C) gall ; A
+quin insecte es guia en part pel sol per orientar-se? ; (A) abella ; (B) puça ; (C) panerola ; A
+quin d’aquests invertebrats viu sota terra i ajuda a airejar el sòl? ; (A) cuc de terra ; (B) pop ; (C) cranc ; A
+quin insecte es menja fulles i pot formar plagues als cultius? ; (A) llagosta ; (B) papallona monarca ; (C) marieta ; A
+quin d’aquests insectes sol tenir colors vius per advertir els depredadors? ; (A) marieta ; (B) mosquit ; (C) mosca ; A
+quin invertebrat té el cos tou protegit per dues valves? ; (A) musclo ; (B) llagosta ; (C) abella ; A
+quin d’aquests animals és un artròpode? ; (A) cranc ; (B) peix ; (C) cavall ; A
+quin insecte produeix mel? ; (A) abella ; (B) formiga ; (C) escarabat ; A
+quin d’aquests invertebrats té el cos segmentat i moltes parelles de potes? ; (A) centpeus ; (B) colom ; (C) granota ; A
+quin insecte sol viure en ruscs i té una reina? ; (A) abella ; (B) papallona ; (C) llagosta ; A
