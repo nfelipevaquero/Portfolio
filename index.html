@@ -3,74 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Felipe | Portafolio Profesional</title>
+    <title>Nicolás Felipe | Portafolio Tech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-wrapper">
+    <div class="main-wrapper">
         <aside class="sidebar">
-            <div class="profile-pic">
-                <i class="fa-solid fa-user-gear"></i>
+            <div class="sidebar-content">
+                <div class="profile-header">
+                    <h1>NICOLÁS FELIPE</h1>
+                    <p>Desarrollador Multiplataforma & Sistemas</p>
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#about">Sobre mí</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#education">Formación</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="contact-links">
+                        <a href="mailto:nfelipevaquero@gmail.com"><i class="fa-solid fa-envelope"></i> Email [cite: 100]</a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn [cite: 124]</a>
+                        <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
             </div>
-            
-            <section class="contact-section">
-                <h3>CONTACTO</h3>
-                <p><i class="fa-solid fa-phone"></i> (+34) 639 16 155 77</p>
-                <p><i class="fa-solid fa-envelope"></i> nfelipevaquero@gmail.com</p>
-                <p><i class="fa-solid fa-location-dot"></i> Barcelona (España)</p>
-            </section>
-
-            <section class="languages-section">
-                <h3>IDIOMAS</h3>
-                <ul>
-                    <li>Español: Nativo</li>
-                    <li>Catalán: Nativo</li>
-                    <li>Inglés: B2 (Intermedio-Alto)</li>
-                </ul>
-            </section>
-
-            <section class="links-section">
-                <h3>SITIO WEB</h3>
-                <p><a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
-            </section>
         </aside>
 
-        <main class="main-content">
-            <header>
-                <h1>NICOLÁS FELIPE</h1>
-                <p class="tagline">Técnico Informático | Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
-            </header>
-
-            <section>
-                <h2 class="section-title">SOBRE MÍ</h2>
-                <p>Técnico informático especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Enfocado en la optimización de procesos mediante código limpio y la resolución eficiente de incidencias técnicas en entornos de red.</p>
+        <main class="content-area">
+            
+            <section id="about" class="hero">
+                <h2>Hola, soy Nicolás.</h2>
+                <p>Especializado en el despliegue de sistemas y el desarrollo de software multiplataforma[cite: 110]. Me enfoco en crear soluciones eficientes mediante código limpio y resolver incidencias técnicas en entornos de red complejos[cite: 111].</p>
             </section>
 
-            <section>
-                <h2 class="section-title">EDUCACIÓN</h2>
-                <div class="edu-item">
-                    <h4>2025 Estudios actuales</h4>
-                    <p><strong>CFGS Desarrollo de Aplicaciones Multiplataforma</strong></p>
-                    <p>Centre d'estudis Politècnics</p>
-                </div>
-                <div class="edu-item">
-                    <h4>2025 Grado Medio</h4>
-                    <p><strong>Ciclo Formativo Grado Medio Sistemas Microinformáticos y Redes</strong></p>
-                    <p>Escola del Treball Barcelona</p>
-                    <p class="fct"><em>Prácticas FCT: Soporte técnico, montaje de equipos y mantenimiento de infraestructuras de red.</em></p>
+            <section id="projects">
+                <h3 class="section-label">PROYECTOS DESTACADOS</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h4>Gestor de Inventario Java</h4>
+                            <p>Aplicación de escritorio que utiliza Programación Orientada a Objetos (POO) para la gestión de stocks industriales[cite: 130].</p>
+                            <div class="tags"><span>Java</span> <span>Swing</span> <span>MySQL</span></div>
+                        </div>
+                        <a href="https://github.com/tu-usuario/proyecto-java" target="_blank" class="project-link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h4>Script de Automatización Linux</h4>
+                            <p>Automatización de backups y mantenimiento de usuarios en servidores Ubuntu/Debian mediante Python[cite: 128, 130].</p>
+                            <div class="tags"><span>Python</span> <span>Bash</span> <span>Linux</span></div>
+                        </div>
+                        <a href="https://github.com/tu-usuario/proyecto-python" target="_blank" class="project-link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h4>Estructura de Red Corporativa</h4>
+                            <p>Documentación y scripts de configuración para una red local segura con segmentación de VLANs[cite: 128].</p>
+                            <div class="tags"><span>Cisco</span> <span>SMR</span> <span>Seguridad</span></div>
+                        </div>
+                        <a href="#" class="project-link">Ver Documentación <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </section>
 
-            <section>
-                <h2 class="section-title">HABILIDADES TÉCNICAS</h2>
-                <div class="skills-container">
-                    <div class="skill-box"><strong>Sistemas y Redes:</strong> Configuración de redes y administración Win/Linux.</div>
-                    <div class="skill-box"><strong>Datos y Gestión:</strong> Diseño de bases de datos SQL y ofimática.</div>
-                    <div class="skill-box"><strong>Desarrollo Software:</strong> Dominio de Java y Python (POO).</div>
-                    <div class="skill-box"><strong>Desarrollo Web:</strong> HTML5, CSS3 y JavaScript (JS).</div>
+            <section id="skills">
+                <h3 class="section-label">STACK TECNOLÓGICO</h3>
+                <div class="skills-flex">
+                    <div class="skill-tag">Java [cite: 130]</div>
+                    <div class="skill-tag">Python [cite: 130]</div>
+                    <div class="skill-tag">SQL [cite: 129]</div>
+                    <div class="skill-tag">JavaScript [cite: 131]</div>
+                    <div class="skill-tag">HTML5/CSS3 [cite: 131]</div>
+                    <div class="skill-tag">Linux/Windows Server [cite: 128]</div>
                 </div>
             </section>
+
         </main>
     </div>
     <script src="script.js"></script>
