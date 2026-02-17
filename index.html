@@ -4,85 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolás Felipe | Portafolio Tech</title>
+    
+    <link rel="icon" type="image/png" href="icon.png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-wrapper">
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <div class="profile-header">
-                    <h1>NICOLÁS FELIPE</h1>
-                    <p>Desarrollador Multiplataforma & Sistemas</p>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">NF</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-code"></i> Proyectos</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-microchip"></i> Habilidades</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Trayectoria</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="contact-info">
+                    <p>nfelipevaquero@gmail.com</p>
                 </div>
-                
-                <nav class="nav-menu">
-                    <a href="#about">Sobre mí</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="#skills">Habilidades</a>
-                    <a href="#education">Formación</a>
-                </nav>
-
-                <div class="sidebar-footer">
-                    <div class="contact-links">
-                        <a href="mailto:nfelipevaquero@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-                        <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>
-                    </div>
+                <div class="social-icons">
+                    <a href="mailto:nfelipevaquero@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-        </aside>
+        </nav>
 
-        <main class="content-area">
-            
-            <section id="about" class="hero">
-                <h2>Hola, soy Nicolás.</h2>
-                <p>Especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Me enfoco en crear soluciones eficientes mediante código limpio y resolver incidencias técnicas en entornos de red complejos.</p>
+        <main class="main-content">
+            <section id="home" class="full-section hero">
+                <div class="hero-text">
+                    <h1>NICOLÁS FELIPE</h1>
+                    <p class="tagline">Técnico Informático | Estudiante de DAM</p>
+                    <p class="description">Especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Mi enfoque: código limpio y soluciones de red eficientes.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn-primary">Explorar Proyectos</a>
+                        <a href="#education" class="btn-secondary">Ver Trayectoria</a>
+                    </div>
+                </div>
             </section>
 
-            <section id="projects">
-                <h3 class="section-label">PROYECTOS DESTACADOS</h3>
+            <section id="projects" class="full-section">
+                <h2 class="label">PROYECTOS DESTACADOS</h2>
                 <div class="projects-grid">
+                    
                     <div class="project-card">
                         <div class="project-info">
-                            <h4>Tamagochi</h4>
-                            <p>Aplicación de java que ejecuta una mascota virtual para concienciar sobre el cuidado de los animales.</p>
+                            <h3>Tamagochi</h3>
+                            <p>Aplicación que simula una mascota virtual.</p>
                             <div class="tags"><span>Java</span></div>
                         </div>
-                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet" target="_blank" class="project-link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet" target="_blank" class="link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-info">
-                            <h4>Quiz Mascotas</h4>
-                            <p>Quiz con varias preguntas para aprender sobre diferentes animales.</p>
+                            <h3>Quiz Mascotas</h3>
+                            <p>Quiz con diversas preguntas sobre animales para aprobar la adopción de una mascota.</p>
                             <div class="tags"><span>Java</span></div>
                         </div>
-                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora" target="_blank" class="project-link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora" target="_blank" class="link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-info">
-                            <h4>Estructura de Red Corporativa</h4>
-                            <p>Documentación y scripts de configuración para una red local segura con segmentación de VLANs.</p>
-                            <div class="tags"><span>Cisco</span> <span>SMR</span> <span>Seguridad</span></div>
+                            <h3>Remember me Charlotte</h3>
+                            <p>Videojuego programado en Pygame por un equipo de 4 personas.</p>
+                            <div class="tags"><span>Python</span></div>
                         </div>
-                        <a href="#" class="project-link">Ver Documentación <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://quackson-studio.itch.io/remember-me-charlotte" target="_blank" class="link">Página de descarga <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="skills" class="full-section">
+                <h2 class="label">STACK TÉCNICO</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Desarrollo</h4>
+                        <div class="tags-flex">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Sistemas</h4>
+                        <div class="tags-flex">
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Windows Server</span>
+                            <span class="skill-tag">Cisco</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Web & Datos</h4>
+                        <div class="tags-flex">
+                            <span class="skill-tag">HTML5/CSS3/JS</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="skills">
-                <h3 class="section-label">STACK TECNOLÓGICO</h3>
-                <div class="skills-flex">
-                    <div class="skill-tag">Java</div>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">SQL</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">HTML5/CSS3</div>
-                    <div class="skill-tag">Linux/Windows Server</div>
+            <section id="education" class="full-section">
+                <h2 class="label">TRAYECTORIA</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="t-dot"></div>
+                        <div class="t-date">2025 - Actualidad</div>
+                        <div class="t-content">
+                            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+                            <p class="inst">Centre d'estudis Politècnics</p>
+                            <p>Especialización en lógica de negocio, bases de datos y desarrollo de interfaces multiplataforma.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="t-dot"></div>
+                        <div class="t-date">2023 - 2025</div>
+                        <div class="t-content">
+                            <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+                            <p class="inst">Escola del Treball Barcelona</p>
+                            <div class="highlight-box">
+                                <strong>Prácticas FCT:</strong> Soporte técnico de primer nivel, montaje de hardware y mantenimiento de infraestructuras de red corporativas.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
         </main>
     </div>
     <script src="script.js"></script>
