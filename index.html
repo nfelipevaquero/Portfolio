@@ -2,109 +2,131 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Felipe | Windows XP Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Nicolás Felipe | Portfolio XP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="desktop">
-    <div class="desktop-shortcuts">
-        <div class="shortcut" onclick="openWindow('win-projects')">
-            <i class="fa-solid fa-folder-open"></i>
-            <span>Mis Proyectos</span>
-        </div>
-        <div class="shortcut" onclick="openWindow('win-bio')">
-            <i class="fa-solid fa-file-lines"></i>
-            <span>Biografía.txt</span>
-        </div>
+<div id="desktop">
+    <div class="shortcut" onclick="openWin('win-bio')">
+        <img src="https://win98icons.alexmeub.com/icons/png/notepad-5.png">
+        <span>Biografía.txt</span>
+    </div>
+    <div class="shortcut" onclick="openWin('win-pro')">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png">
+        <span>Mis Proyectos</span>
+    </div>
+    <div class="shortcut" onclick="openWin('win-log')">
+        <img src="https://win98icons.alexmeub.com/icons/png/world-3.png">
+        <span>Historial.log</span>
     </div>
 
-    <div id="win-bio" class="window" style="top: 50px; left: 100px;">
-        <div class="title-bar" onmousedown="focusWindow('win-bio')">
-            <div class="title-bar-text">
-                <i class="fa-solid fa-file-lines"></i> Biografía.txt - Bloc de notas
+    <div id="win-bio" class="window" style="top:20px; left:40px; width:550px;">
+        <div class="title-bar">
+            <div class="title-caption">
+                <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" width="16">
+                <span>Biografía.txt - Bloc de notas</span>
             </div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize" onclick="minimizeWindow('win-bio')"></button>
-                <button aria-label="Maximize" onclick="maximizeWindow('win-bio')"></button>
-                <button aria-label="Close" onclick="closeWindow('win-bio')"></button>
-            </div>
-        </div>
-        <div class="window-body notepad">
-            <textarea readonly>
-NICOLÁS FELIPE
----------------------------
-Técnico en SMR (Sistemas Microinformáticos y Redes)
-Estudiante de DAM (Desarrollo de Aplicaciones Multiplataforma)
-
-Especializado en el despliegue de sistemas operativos y desarrollo de software multiplataforma. Mi enfoque se centra en soluciones eficientes y código limpio.
-            </textarea>
-        </div>
-    </div>
-
-    <div id="win-projects" class="window" style="top: 150px; left: 300px;">
-        <div class="title-bar" onmousedown="focusWindow('win-projects')">
-            <div class="title-bar-text">
-                <i class="fa-solid fa-folder-open"></i> C:\Mis_Documentos\Proyectos
-            </div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize" onclick="minimizeWindow('win-projects')"></button>
-                <button aria-label="Maximize" onclick="maximizeWindow('win-projects')"></button>
-                <button aria-label="Close" onclick="closeWindow('win-projects')"></button>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-bio')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-bio')"></button>
+                <button class="btn-close" onclick="closeWin('win-bio')">×</button>
             </div>
         </div>
-        <div class="window-body explorer">
-            <div class="folder-grid">
-                <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet" target="_blank" class="folder-item">
-                    <i class="fa-solid fa-file-code"></i>
-                    <p>Tamagochi.java</p>
-                </a>
-                <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora" target="_blank" class="folder-item">
-                    <i class="fa-solid fa-file-code"></i>
-                    <p>QuizMascotas.java</p>
-                </a>
-                <a href="https://quackson-studio.itch.io/remember-me-charlotte" target="_blank" class="folder-item">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <p>Charlotte.exe</p>
-                </a>
+        <div class="window-body">
+            <div class="content-text">
+                <h1>Nicolás Felipe</h1>
+                <p><strong>📍 ESTADO:</strong> Estudiante de 1º de DAM (Desarrollo de Aplicaciones Multiplataforma)</p>
+                <p><strong>🛠️ PERFIL:</strong> Técnico en SMR (Sistemas Microinformáticos y Redes)</p>
+                <hr class="win-hr">
+                <p>Me defino como un entusiasta de la tecnología con una base sólida en infraestructura y hardware gracias a mi formación en SMR. Tras dominar el funcionamiento físico de los sistemas, he dado el paso al desarrollo para crear soluciones lógicas y funcionales.</p>
+                <p><strong>🚀 MI CAMINO:</strong> Actualmente sumergido en los fundamentos de la programación, dominando Java y la lógica de objetos. Busco la eficiencia en el código y la limpieza en el diseño.</p>
+                <p><strong>🎯 OBJETIVO:</strong> Ser un desarrollador Full-Stack capaz de gestionar desde el servidor hasta la interfaz final.</p>
             </div>
         </div>
     </div>
 
-    <div id="start-menu" class="start-menu">
-        <div class="start-header">Nicolás Felipe</div>
-        <div class="start-main">
-            <div class="start-left">
-                <div class="start-item" onclick="openWindow('win-bio')"><i class="fa-solid fa-user"></i> Sobre mí</div>
-                <div class="start-item" onclick="openWindow('win-projects')"><i class="fa-solid fa-folder"></i> Documentos</div>
+    <div id="win-pro" class="window" style="top:100px; left:350px; width:520px;">
+        <div class="title-bar">
+            <div class="title-caption">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-0.png" width="16">
+                <span>C:\Mis_Documentos\Proyectos</span>
             </div>
-            <div class="start-right">
-                <div class="start-item-r">Mi PC</div>
-                <div class="start-item-r">Panel de Control</div>
-                <hr>
-                <div class="start-item-r" onclick="location.reload()">Cerrar sesión</div>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-pro')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-pro')"></button>
+                <button class="btn-close" onclick="closeWin('win-pro')">×</button>
             </div>
         </div>
-        <div class="start-footer">
-            <button onclick="location.reload()"><i class="fa-solid fa-power-off"></i> Apagar</button>
+        <div class="explorer-toolbar">
+            <div class="tool-item">Archivo</div><div class="tool-item">Edición</div><div class="tool-item">Ver</div><div class="tool-item">Ayuda</div>
+        </div>
+        <div class="window-body">
+            <div class="proyectos-container">
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet/src"><strong>Tamagochi: </strong> Simulador de mascota virtual.</a></div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora/src"><strong>Quiz Mascotas:</strong> Quiz con preguntas de diversos animales para la adopción de una mascota.</a></div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><strong>Football Manager:</strong> Gestión de estados y POO avanzada en Java.</div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://win98icons.alexmeub.com/icons/png/game_solitaire-0.png" width="32"></div>
+                    <div class="p-text"><a href="https://quackson-studio.itch.io/remember-me-charlotte"><strong>Remember me Charlotte:</strong> Videojuego creado por un equipo de 4 personas utilizando el motor de Pygame (Python).</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="win-log" class="window" style="top:320px; left:180px; width:420px;">
+        <div class="title-bar">
+            <div class="title-caption"><span>🌐 Historial.log</span></div>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-log')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-log')"></button>
+                <button class="btn-close" onclick="closeWin('win-log')">×</button>
+            </div>
+        </div>
+        <div class="window-body terminal">
+            <div class="log-row">> [OK] Coffee Engine: v2.0.1 Stable</div>
+            <div class="log-row">> [INFO] Dev: Nicolás coding...</div>
+            <div class="log-row" style="color:#0f0">> [SUCCESS] Ready to build.</div>
+        </div>
+    </div>
+
+    <div id="start-menu">
+        <div class="s-header">
+            <img src="https://win98icons.alexmeub.com/icons/png/user_computer-0.png" width="34">
+            <span>Nicolás Felipe</span>
+        </div>
+        <div class="s-body">
+            <div class="s-sidebar"><div class="s-sidebar-text">Windows<span>XP</span></div></div>
+            <div class="s-main-content">
+                <div class="s-left">
+                    <div class="s-item" onclick="openWin('win-bio')"><img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png"> Biografía</div>
+                    <div class="s-item" onclick="openWin('win-pro')"><img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-0.png"> Proyectos</div>
+                    <div class="s-item" onclick="openWin('win-log')"><img src="https://win98icons.alexmeub.com/icons/png/world-3.png"> Historial</div>
+                </div>
+                <div class="s-right">
+                    <div class="s-item" onclick="location.reload()"><img src="https://win98icons.alexmeub.com/icons/png/shut_down_normal-0.png"> Apagar</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <footer class="taskbar">
     <button class="start-btn" onclick="toggleStart()">
-        <i class="fa-brands fa-windows"></i> Inicio
+        <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" width="18">
+        <span>inicio</span>
     </button>
-    <div class="taskbar-apps">
-        <div id="task-win-bio" class="task-item" onclick="toggleMinimize('win-bio')">Biografía.txt</div>
-        <div id="task-win-projects" class="task-item" onclick="toggleMinimize('win-projects')">Mis Proyectos</div>
-    </div>
-    <div class="system-tray">
-        <i class="fa-solid fa-network-wired"></i>
-        <span id="clock">00:00</span>
-    </div>
+    <div id="tabs-container"></div>
+    <div class="tray"><span id="clock">00:00</span></div>
 </footer>
 
 <script src="script.js"></script>

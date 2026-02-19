@@ -1,97 +1,84 @@
-/* VARIABLES XP */
 :root {
     --xp-blue: #245edb;
-    --xp-title: linear-gradient(to bottom, #0058e6 0%, #086dff 4%, #0054e3 6%, #086dff 14%, #1a82ff 100%);
-    --xp-start: linear-gradient(to bottom, #388238 0%, #469e46 4%, #388238 6%, #5cb85c 100%);
-    --xp-taskbar: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+    --xp-grad: linear-gradient(to bottom, #0058e6 0%, #086dff 4%, #0054e3 6%, #086dff 14%, #1a82ff 100%);
 }
 
-body, html { 
-    margin: 0; padding: 0; height: 100%; width: 100%; 
-    font-family: Tahoma, sans-serif; overflow: hidden;
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Tahoma", sans-serif; }
+
+body { 
+    height: 100vh; width: 100vw; overflow: hidden; 
+    background: url('wallpaper.jpg') no-repeat center center fixed; 
+    background-size: cover; 
 }
 
-/* FONDO: Aquí pon tu archivo local */
-body {
-    background: #008080 url('fondo-xp.jpg') no-repeat center center fixed;
-    background-size: cover;
+/* ANIMACIONES */
+@keyframes windowOpen { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes windowMinimize { from { transform: scale(1); opacity: 1; } to { transform: scale(0.3) translateY(600px); opacity: 0; } }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+
+/* VENTANAS */
+.window { 
+    position: absolute; background: #ece9d8; border: 3px solid var(--xp-blue); 
+    border-radius: 8px 8px 0 0; display: none; flex-direction: column; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); animation: windowOpen 0.15s ease-out;
 }
+.window.closing { transform: scale(0.95); opacity: 0; transition: 0.1s; }
+.window.minimizing { animation: windowMinimize 0.2s ease-in forwards; }
+.window.maximized { top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; border-radius: 0; }
 
-.desktop { height: calc(100% - 30px); position: relative; padding: 15px; }
+.title-bar { background: var(--xp-grad); height: 30px; display: flex; justify-content: space-between; align-items: center; padding: 0 8px; color: white; cursor: move; }
+.title-caption { display: flex; align-items: center; gap: 6px; font-weight: bold; font-size: 12px; }
 
-/* ICONOS ESCRITORIO */
-.shortcut { width: 80px; text-align: center; color: white; margin-bottom: 20px; cursor: pointer; }
-.shortcut i { font-size: 32px; text-shadow: 2px 2px #000; color: #f4d03f; display: block; margin-bottom: 5px; }
-.shortcut span { font-size: 11px; text-shadow: 1px 1px #000; }
+.controls { display: flex; gap: 2px; }
+.controls button { width: 21px; height: 21px; border: 1px solid #fff; border-radius: 2px; cursor: pointer; color: white; font-weight: bold; }
+.btn-min { background: #3c81f3; position: relative; }
+.btn-min::after { content: ''; width: 8px; height: 2px; background: white; position: absolute; bottom: 4px; left: 5px; }
+.btn-max { background: #3c81f3; position: relative; }
+.btn-max::before { content: ''; width: 9px; height: 7px; border: 2px solid white; border-top: 3px solid white; position: absolute; top: 4px; left: 4px; }
+.btn-close { background: #e04343; font-size: 14px; }
 
-/* VENTANA */
-.window {
-    position: absolute; width: 500px; background: #ece9d8;
-    border: 3px solid #0054e3; border-radius: 8px 8px 0 0;
-    display: none; flex-direction: column; box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
-}
-.window.active { display: flex; z-index: 100; }
+/* PROYECTOS ORGANIZADOS */
+.proyectos-container { display: flex; flex-direction: column; gap: 12px; padding: 10px 5px; }
+.p-item { display: flex; align-items: center; padding: 8px; }
+.p-icon-wrapper { width: 50px; display: flex; justify-content: center; margin-right: 15px; }
+.p-text { font-size: 13px; color: #000; flex: 1; line-height: 1.4; }
+.java-icon { width: 32px; height: 32px; object-fit: contain; }
 
-.title-bar {
-    background: var(--xp-title); padding: 3px 6px;
-    display: flex; justify-content: space-between; align-items: center;
-    color: white; font-weight: bold; font-size: 13px; text-shadow: 1px 1px #000;
-}
-
-/* BOTONES ESQUINA */
-.title-bar-controls { display: flex; gap: 2px; }
-.title-bar-controls button {
-    width: 21px; height: 21px; border: 1px solid #fff; border-radius: 2px;
-    cursor: pointer; position: relative; box-shadow: inset -1px -1px #1542a1;
-}
-
-button[aria-label="Minimize"] { background: #3e81f1; }
-button[aria-label="Minimize"]::after { content: ''; position: absolute; bottom: 4px; left: 4px; width: 10px; height: 2px; background: white; }
-
-button[aria-label="Maximize"] { background: #3e81f1; }
-button[aria-label="Maximize"]::after { content: ''; position: absolute; top: 4px; left: 4px; width: 9px; height: 7px; border: 2px solid white; border-top-width: 3px; }
-
-button[aria-label="Close"] { background: #e04343; }
-button[aria-label="Close"]::after { content: '×'; color: white; font-size: 16px; line-height: 18px; }
-
-/* CUERPO VENTANAS */
-.window-body { background: white; margin: 2px; border: 1px solid #7f9db9; flex-grow: 1; min-height: 200px; }
-.notepad textarea { width: 100%; height: 250px; border: none; padding: 10px; resize: none; font-family: monospace; }
-.explorer { padding: 20px; }
-.folder-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
-.folder-item { text-decoration: none; color: black; font-size: 11px; }
-.folder-item i { font-size: 40px; color: #3b82f6; display: block; margin-bottom: 5px; }
-
-/* MENÚ INICIO */
-.start-menu {
-    position: absolute; bottom: 0; left: 0; width: 300px; 
-    background: #ece9d8; border: 2px solid #0054e3; border-radius: 5px 5px 0 0;
-    display: none; flex-direction: column; z-index: 1000;
-}
-.start-header { background: linear-gradient(to bottom, #1a82ff, #0058e6); padding: 10px; color: white; font-weight: bold; }
-.start-main { display: flex; background: white; }
-.start-left { width: 60%; padding: 5px; }
-.start-right { width: 40%; background: #d3e5fa; padding: 5px; border-left: 1px solid #91b5df; }
-.start-item, .start-item-r { padding: 6px; font-size: 11px; cursor: pointer; display: flex; align-items: center; gap: 5px; }
-.start-item:hover { background: #316ac5; color: white; }
+.window-body { background: white; margin: 2px; border: 1px solid #7f9db9; flex-grow: 1; overflow: auto; padding: 15px; }
+.win-hr { margin: 10px 0; border: 0; border-top: 1px solid #ccc; }
+.terminal { background: #000; color: #0f0; font-family: monospace; }
+.explorer-toolbar { display: flex; background: #f0f0e0; padding: 4px 10px; border-bottom: 1px solid #ccc; gap: 15px; font-size: 11px; }
 
 /* TASKBAR */
-.taskbar {
-    position: fixed; bottom: 0; width: 100%; height: 30px;
-    background: var(--xp-taskbar); display: flex; align-items: center; z-index: 2000;
-}
-.start-btn {
-    background: var(--xp-start); color: white; border: none;
-    height: 100%; padding: 0 15px; font-weight: bold; font-style: italic;
-    border-radius: 0 10px 10px 0; cursor: pointer; font-size: 14px;
-}
-.taskbar-apps { flex-grow: 1; display: flex; padding: 0 10px; gap: 5px; }
-.task-item {
-    background: #3e81f1; color: white; font-size: 11px; padding: 3px 10px;
-    border: 1px solid #1941a5; border-radius: 2px; cursor: pointer; display: none;
-}
-.task-item.visible { display: block; }
-.system-tray { background: #09adff; height: 100%; padding: 0 10px; display: flex; align-items: center; color: white; gap: 10px; border-left: 1px solid #0054e3; font-size: 11px; }
+.taskbar { height: 32px; background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 10%, #245edb 20%, #1941a5 100%); display: flex; align-items: center; position: fixed; bottom: 0; width: 100%; z-index: 10000; }
+.start-btn { background: linear-gradient(to bottom, #388238 0%, #5cb85c 100%); color: white; border: none; height: 100%; padding: 0 15px; border-radius: 0 12px 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px; font-weight: bold; font-style: italic; font-size: 16px; text-shadow: 1px 1px 2px #000; }
+#tabs-container { display: flex; flex-grow: 1; gap: 5px; padding: 0 10px; align-items: center; }
+.tab { background: #3e81f1; color: white; border: 1px solid #1941a5; padding: 4px 10px; border-radius: 3px; font-size: 11px; min-width: 120px; cursor: pointer; box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3); }
 
-/* MAXIMIZAR */
-.maximized { width: 100% !important; height: calc(100% - 30px) !important; top: 0 !important; left: 0 !important; }
+/* RELOJ (TRAY) */
+.tray { 
+    background: #09adff; padding: 0 10px; color: white; height: 100%; 
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; margin-left: auto; border-left: 1px solid #1642a1;
+    box-shadow: inset 1px 0 1px rgba(255,255,255,0.3); min-width: 65px;
+}
+
+/* MENÚ INICIO */
+#start-menu { 
+    position: absolute; bottom: 32px; left: 0; width: 300px; background: #fff; 
+    border: 2px solid var(--xp-blue); display: none; flex-direction: column; 
+    z-index: 9999; animation: slideUp 0.15s ease-out; box-shadow: 2px -2px 10px rgba(0,0,0,0.3);
+}
+.s-header { background: var(--xp-grad); color: white; padding: 12px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #eebb44; font-weight: bold; }
+.s-body { display: flex; height: 260px; }
+.s-sidebar { width: 25px; background: linear-gradient(to right, #1642a1, #3c81f3); position: relative; overflow: hidden; }
+.s-sidebar-text { color: rgba(255,255,255,0.4); transform: rotate(-90deg) translateX(-160px); width: 200px; font-weight: bold; font-size: 18px; position: absolute; bottom: 10px; left: -85px; }
+.s-sidebar-text span { color: white; }
+.s-main-content { display: flex; flex-grow: 1; }
+.s-left { width: 60%; background: #fff; padding: 8px; }
+.s-right { width: 40%; background: #d3e5fa; border-left: 1px solid #91b5df; padding: 8px; }
+.s-item { padding: 8px; font-size: 11px; display: flex; align-items: center; gap: 8px; cursor: pointer; color: #000; }
+.s-item:hover { background: #316ac5; color: white; }
+
+.shortcut { width: 100px; text-align: center; color: white; cursor: pointer; margin: 15px; text-shadow: 1px 1px 2px #000; float: left; clear: both; }
+.shortcut img { width: 48px; height: 48px; display: block; margin: 0 auto 5px; }
