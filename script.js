@@ -1,39 +1,59 @@
-// Resaltar sección activa en el menú lateral
-const sections = document.querySelectorAll('.full-section');
-const navLinks = document.querySelectorAll('.nav-links a');
+let highestZ = 100;
 
-window.addEventListener('scroll', () => {
-    let current = "";
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-        }
-    });
+function toggleStart() {
+    const menu = document.getElementById('start-menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-});
+function focusWindow(id) {
+    highestZ++;
+    document.getElementById(id).style.zIndex = highestZ;
+    document.getElementById('start-menu').style.display = 'none';
+}
 
-// Animación de aparición (Intersection Observer)
-const observerOptions = { threshold: 0.1 };
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, observerOptions);
+function openWindow(id) {
+    const win = document.getElementById(id);
+    const task = document.getElementById('task-' + id);
+    win.style.display = 'flex';
+    task.classList.add('visible');
+    focusWindow(id);
+}
 
-document.querySelectorAll('.project-card, .timeline-item, .skill-category').forEach(el => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "all 0.6s cubic-bezier(0.4, 0, 0.2, 1)";
-    observer.observe(el);
-});
+function closeWindow(id) {
+    document.getElementById(id).style.display = 'none';
+    document.getElementById('task-' + id).classList.remove('visible');
+}
+
+function minimizeWindow(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function toggleMinimize(id) {
+    const win = document.getElementById(id);
+    if (win.style.display === 'none') {
+        win.style.display = 'flex';
+        focusWindow(id);
+    } else {
+        win.style.display = 'none';
+    }
+}
+
+function maximizeWindow(id) {
+    document.getElementById(id).classList.toggle('maximized');
+}
+
+// Reloj
+function updateClock() {
+    const now = new Date();
+    const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    document.getElementById('clock').innerText = time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Cerrar menú al hacer clic en el escritorio
+document.querySelector('.desktop').onclick = (e) => {
+    if (e.target.classList.contains('desktop')) {
+        document.getElementById('start-menu').style.display = 'none';
+    }
+}

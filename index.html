@@ -3,142 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Felipe | Portafolio Tech</title>
-    
-    <link rel="icon" type="image/png" href="icon.png">
-    
+    <title>Nicolás Felipe | Windows XP Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <nav class="sidebar">
-            <div class="sidebar-top">
-                <div class="brand">NF</div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                    <li><a href="#projects"><i class="fa-solid fa-code"></i> Proyectos</a></li>
-                    <li><a href="#skills"><i class="fa-solid fa-microchip"></i> Habilidades</a></li>
-                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Trayectoria</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-bottom">
-                <div class="contact-info">
-                    <p>nfelipevaquero@gmail.com</p>
-                </div>
-                <div class="social-icons">
-                    <a href="mailto:nfelipevaquero@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </nav>
 
-        <main class="main-content">
-            <section id="home" class="full-section hero">
-                <div class="hero-text">
-                    <h1>NICOLÁS FELIPE</h1>
-                    <p class="tagline">Técnico Informático | Estudiante de DAM</p>
-                    <p class="description">Especializado en el despliegue de sistemas y el desarrollo de software multiplataforma. Mi enfoque: código limpio y soluciones de red eficientes.</p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn-primary">Explorar Proyectos</a>
-                        <a href="#education" class="btn-secondary">Ver Trayectoria</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="full-section">
-                <h2 class="label">PROYECTOS DESTACADOS</h2>
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3>Tamagochi</h3>
-                            <p>Aplicación que simula una mascota virtual.</p>
-                            <div class="tags"><span>Java</span></div>
-                        </div>
-                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet" target="_blank" class="link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3>Quiz Mascotas</h3>
-                            <p>Quiz con diversas preguntas sobre animales para aprobar la adopción de una mascota.</p>
-                            <div class="tags"><span>Java</span></div>
-                        </div>
-                        <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora" target="_blank" class="link">Ver Código <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-info">
-                            <h3>Remember me Charlotte</h3>
-                            <p>Videojuego programado en Pygame por un equipo de 4 personas.</p>
-                            <div class="tags"><span>Python</span></div>
-                        </div>
-                        <a href="https://quackson-studio.itch.io/remember-me-charlotte" target="_blank" class="link">Página de descarga <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="skills" class="full-section">
-                <h2 class="label">STACK TÉCNICO</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Desarrollo</h4>
-                        <div class="tags-flex">
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Sistemas</h4>
-                        <div class="tags-flex">
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Windows Server</span>
-                            <span class="skill-tag">Cisco</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Web & Datos</h4>
-                        <div class="tags-flex">
-                            <span class="skill-tag">HTML5/CSS3/JS</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="education" class="full-section">
-                <h2 class="label">TRAYECTORIA</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="t-dot"></div>
-                        <div class="t-date">2025 - Actualidad</div>
-                        <div class="t-content">
-                            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
-                            <p class="inst">Centre d'estudis Politècnics</p>
-                            <p>Especialización en lógica de negocio, bases de datos y desarrollo de interfaces multiplataforma.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="t-dot"></div>
-                        <div class="t-date">2023 - 2025</div>
-                        <div class="t-content">
-                            <h3>CFGM Sistemas Microinformáticos y Redes</h3>
-                            <p class="inst">Escola del Treball Barcelona</p>
-                            <div class="highlight-box">
-                                <strong>Prácticas FCT:</strong> Soporte técnico de primer nivel, montaje de hardware y mantenimiento de infraestructuras de red corporativas.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+<div class="desktop">
+    <div class="desktop-shortcuts">
+        <div class="shortcut" onclick="openWindow('win-projects')">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Mis Proyectos</span>
+        </div>
+        <div class="shortcut" onclick="openWindow('win-bio')">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Biografía.txt</span>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <div id="win-bio" class="window" style="top: 50px; left: 100px;">
+        <div class="title-bar" onmousedown="focusWindow('win-bio')">
+            <div class="title-bar-text">
+                <i class="fa-solid fa-file-lines"></i> Biografía.txt - Bloc de notas
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeWindow('win-bio')"></button>
+                <button aria-label="Maximize" onclick="maximizeWindow('win-bio')"></button>
+                <button aria-label="Close" onclick="closeWindow('win-bio')"></button>
+            </div>
+        </div>
+        <div class="window-body notepad">
+            <textarea readonly>
+NICOLÁS FELIPE
+---------------------------
+Técnico en SMR (Sistemas Microinformáticos y Redes)
+Estudiante de DAM (Desarrollo de Aplicaciones Multiplataforma)
+
+Especializado en el despliegue de sistemas operativos y desarrollo de software multiplataforma. Mi enfoque se centra en soluciones eficientes y código limpio.
+            </textarea>
+        </div>
+    </div>
+
+    <div id="win-projects" class="window" style="top: 150px; left: 300px;">
+        <div class="title-bar" onmousedown="focusWindow('win-projects')">
+            <div class="title-bar-text">
+                <i class="fa-solid fa-folder-open"></i> C:\Mis_Documentos\Proyectos
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeWindow('win-projects')"></button>
+                <button aria-label="Maximize" onclick="maximizeWindow('win-projects')"></button>
+                <button aria-label="Close" onclick="closeWindow('win-projects')"></button>
+            </div>
+        </div>
+        <div class="window-body explorer">
+            <div class="folder-grid">
+                <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet" target="_blank" class="folder-item">
+                    <i class="fa-solid fa-file-code"></i>
+                    <p>Tamagochi.java</p>
+                </a>
+                <a href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora" target="_blank" class="folder-item">
+                    <i class="fa-solid fa-file-code"></i>
+                    <p>QuizMascotas.java</p>
+                </a>
+                <a href="https://quackson-studio.itch.io/remember-me-charlotte" target="_blank" class="folder-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <p>Charlotte.exe</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-menu" class="start-menu">
+        <div class="start-header">Nicolás Felipe</div>
+        <div class="start-main">
+            <div class="start-left">
+                <div class="start-item" onclick="openWindow('win-bio')"><i class="fa-solid fa-user"></i> Sobre mí</div>
+                <div class="start-item" onclick="openWindow('win-projects')"><i class="fa-solid fa-folder"></i> Documentos</div>
+            </div>
+            <div class="start-right">
+                <div class="start-item-r">Mi PC</div>
+                <div class="start-item-r">Panel de Control</div>
+                <hr>
+                <div class="start-item-r" onclick="location.reload()">Cerrar sesión</div>
+            </div>
+        </div>
+        <div class="start-footer">
+            <button onclick="location.reload()"><i class="fa-solid fa-power-off"></i> Apagar</button>
+        </div>
+    </div>
+</div>
+
+<footer class="taskbar">
+    <button class="start-btn" onclick="toggleStart()">
+        <i class="fa-brands fa-windows"></i> Inicio
+    </button>
+    <div class="taskbar-apps">
+        <div id="task-win-bio" class="task-item" onclick="toggleMinimize('win-bio')">Biografía.txt</div>
+        <div id="task-win-projects" class="task-item" onclick="toggleMinimize('win-projects')">Mis Proyectos</div>
+    </div>
+    <div class="system-tray">
+        <i class="fa-solid fa-network-wired"></i>
+        <span id="clock">00:00</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
