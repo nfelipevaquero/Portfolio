@@ -64,6 +64,9 @@ function renderTabs() {
 // DRAG AND DROP
 document.querySelectorAll('.title-bar').forEach(bar => {
     bar.onmousedown = (e) => {
+        // Si la pantalla es pequeña, no arrastramos
+        if (window.innerWidth <= 768) return; 
+
         let win = bar.parentElement;
         if (win.classList.contains('maximized')) return;
         zIdx++; win.style.zIndex = zIdx;
