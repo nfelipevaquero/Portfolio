@@ -39,7 +39,7 @@ body {
 
 /* PROYECTOS ORGANIZADOS */
 .proyectos-container { display: flex; flex-direction: column; gap: 12px; padding: 10px 5px; }
-.p-item { display: flex; align-items: center; padding: 8px; }
+.p-item { display: flex; align-items: center; padding: 8px;}
 .p-icon-wrapper { width: 50px; display: flex; justify-content: center; margin-right: 15px; }
 .p-text { font-size: 13px; color: #000; flex: 1; line-height: 1.4; }
 .java-icon { width: 32px; height: 32px; object-fit: contain; }
@@ -97,4 +97,8 @@ body {
     .shortcut span { font-size: 11px; }
     #start-menu { width: 90%; }
     #tabs-container { display: none; } /* Ocultamos pestañas en móvil por espacio */
+}
+a {
+     text-decoration: none;
+     color: white;
 }
