@@ -1,0 +1,385 @@
+
+/* Generamos las variables para aplicar todas las fuentes */
+@font-face {
+    font-family: 'CuteNotes';
+    src: url('../fonts/Cute\ Notes.ttf') format('truetype');
+    font-weight:1000;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Itim';
+    src: url('../fonts/Itim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* hacer que las letras tiemblen */
+@keyframes tembleque1 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+ }
+ 
+ 
+ @keyframes tembleque2 {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(3px); }
+    40% { transform: translateY(-3px); }
+    60% { transform: translateY(3px); }
+    80% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+ }
+ 
+ 
+ @keyframes tembleque3 {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+    60% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+ }
+ 
+ 
+ @keyframes tembleque4 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(7px); }
+    100% { transform: translateY(0); }
+ }
+ 
+ 
+ @keyframes tembleque5 {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-3px); }
+    80% { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+ }
+
+ span.tembleque1{    animation: tembleque1 3s ease-in-out infinite;}
+ span.tembleque2{    animation: tembleque2 3s ease-in-out infinite;}
+ span.tembleque3{    animation: tembleque3 3s ease-in-out infinite;}
+ span.tembleque4{    animation: tembleque4 3s ease-in-out infinite;}
+ span.tembleque5{    animation: tembleque5 3s ease-in-out infinite;}
+  
+
+/* Aplicamos formatos en los estilos generales para todas las clases */
+h1 {
+    font-size:44px;
+}
+body {
+    background-color: #CD92F2;
+    color: white;
+    font-family: 'Itim';
+    margin:0px;
+    width:vh;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    font-size: 38px;
+    font-family:'Itim';
+}
+
+/* Aplicamos formatos concretos para las diferentes clases espefíficas */
+header.main{
+    position: sticky;
+    margin: 0px;
+    width: 100vw;
+    background-color: #490080;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+video.title {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+h1.title{
+    font-size:92px;
+    z-index: +1; 
+    color:aliceblue;
+    font-family:'CuteNotes';
+    letter-spacing: -35px;
+    display: inline-block;
+}
+div.h1title{
+    position:relative;
+    margin:auto;
+}
+.title span {
+    display: inline-block;
+ }
+ 
+h1.subtitle{
+    margin:10px 0px 100px 100px;
+    font-size:56px;
+}
+div.subtitle{
+    background-color: #111;
+    margin:0px;
+    padding: 10px;
+}
+div.download_button {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background-color: #490080;
+    border-radius: 60px;
+    max-width: 40vw;
+    margin:auto;
+}
+p.download_button{
+    text-align: center;
+}
+span.header{
+    font-size:56px;
+}
+img.img_l {
+    max-width: 40vw;
+    height: auto;
+    margin: 20px 50px;
+    float: left;
+    border-radius: 25px;
+}
+img.img_r{
+    max-width: 40vw;
+    height:auto;
+    margin:20px 50px;
+    float:right;
+    border-radius: 25px;
+}
+div.text{
+    text-align: justify;
+    height: 30%;
+    width: 90vw;
+    margin: 0px 0px 300px 25px;
+}
+div.main{
+    margin: 100px;
+    text-align: center;
+    width: 100vw;
+}
+footer{
+    background-color:mediumorchid;
+    width: 100%;
+    margin:0px;
+    box-sizing:border-box;
+}
+.aboutus{
+    color:white;
+    text-align: center;
+    font-weight:900;
+    font-size: 88px;
+    margin:auto;
+}
+img.logo{
+    width: 10vw;
+    height:auto;
+    margin:auto;
+    position:static;
+}
+img.logofloat{
+    width: 10vw;
+    height:auto;
+    margin:auto;
+    position:static;
+    float:right;
+}
+img.pfp{
+    width: 90%;
+    margin:auto;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+div.team{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 100px; 
+    max-width:1500px;
+    width: 100vw;
+    margin:auto;
+    overflow-x:auto;
+}
+div.pfp{
+    overflow: hidden;
+    text-align: center;
+}
+h2.pfp{
+    font-size: 36px;
+    font-weight: 900px;
+    color: white;
+}
+p.pfp{
+    font-size: 32px;
+    color: white;
+}
+.Merch_text {
+    margin: 10px;
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+.card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #555;
+}
+.offer span {
+    color: #FF3B3B;
+}
+
+
+/* barra lateral */
+.sidebar {
+    height: 100vh;
+    width: 0;
+    z-index: 10;
+}
+  .sidebar a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+  .open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  #mainidk {
+    transition: margin-left 0.3s;
+    padding: 16px;
+  }
+  .hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 10;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003652;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+button {
+    background-color: #9c49db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    height: 50px;
+}
+
+
+button:hover {
+    background-color: #431666;
+}
+#productos {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.producto {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 250px;
+    justify-content: center;
+    margin: 2px;
+}
+.producto:hover {
+    transform: scale(1.05);
+}
+
+#carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+#ver-carrito {
+    cursor: pointer;
+    font-size: 20px;
+}
+.mostrar-carrito {
+    transform: translateX(0) !important;
+}
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+#contador-carrito {
+    font-weight: bold;
+    color: #ffffff;
+}
+.titleMerch{
+    font-size:60px;
+    z-index: +1; 
+    color:aliceblue;
+    font-family:'CuteNotes';
+}
+.benvingutsMerch {
+    font-size: 38px;
+    font-family:'Itim';
+    text-align: center;
+}
+.TextMerch {
+    color: black;
+    font-family: 'Itim';
+}
+.t-shirt {
+margin-top: 34;
+margin-bottom: 36;
+}

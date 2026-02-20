@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="hover-area" onmouseover="openNav()" onmouseout="closeNav()"></div>
+        <link rel="stylesheet" href="./css/game.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" type="image/`png" href="./images/ducky.pn">
+        <title>Game Page</title>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar" onmouseover="keepOpen()" onmouseout="closeNav()">
+            <img class="item" src="./images/Quackson Studio.png"><br>
+            <div class="item">
+                <a href="index.html">Back to home page</a>
+            </div>
+            <div class="item">
+                <a href="promo_page.html">Game Merch!!!</a>
+            </div> 
+            <div class="item">
+                <a href="quackson_page.html">Our Team</a>
+            </div>
+        </div>
+            <div class="page">
+                <div class="game">
+                    <h1 class="GAME">
+                        <span class="tembleque1">G</span>
+                        <span class="tembleque2">A</span>
+                        <span class="tembleque3">M</span>
+                        <span class="tembleque4">E</span>                        
+                    </h1>
+                </div>
+                <div class="lore2">
+                    <div>
+                        <h2 class="loretitle"><ins>LORE</ins></h2>
+                    </div>
+                    <p class="words texti">Charlotte wakes up in the mysterious world of dans l'ombre, a strange dimension inhabited by anthropomorphic creatures that look like intelligent ducks. She is the only human, and this difference makes her feel even more disoriented. With no memories of who she is or how she got there, Charlotte embarks on a journey through varied landscapes, from enchanted forests to mysterious ruins, to recover the fragments of her memory.</p>
+                    <br><br>
+                </div>
+                <div>
+                    <h3 class="maptitle texti">Dans l'ombre <span class="green">interactive</span> map</h3>
+                </div>
+
+                <div class="container">
+
+                    <img src="./images/map.png" usemap="#image-map" class="mapaa" id="mainImage" style="width: 80%;height: 80%;margin: auto;">
+                </div>
+                <map name="image-map">
+                    <area class="map-pointer" shape="circle" coords="700,900,160" onmouseover="showTooltip(event, 'Village', 'Nestled in Duckstone island, the Duck Village is a quirky, serene settlement where the inhabitants are... well, ducks. The ducks waddle about, living simple but curious lives. The village is strangely lively, with ducks chattering and waddling in perfect harmony.', './images/village.png')" onmouseout="hideTooltip()">
+                    <area class="map-pointer" shape="circle" coords="1270,800,140" onmouseover="showTooltip(event, 'Castle', 'Perched atop a jagged cliff in Dans l&acute;Ombre, the Dark Castle looms, shrouded in eternal twilight. Its towering spires pierce the stormy sky, and the walls are carved with twisted, ancient symbols that pulse with malevolent energy. The heart of the castle is a labyrinth of traps and dark magic.', './images/castle.png')" onmouseout="hideTooltip()">
+                    <area class="map-pointer" shape="circle" coords="380,400,130" onmouseover="showTooltip(event, 'Cave', 'The Amethyst Abyss lies deep within the shadowy underworld of Dans l&acute;Ombre, a glowing labyrinth of violet quartz and shimmering crystal spires. Floating platforms shift unpredictably and further down, we find the heart of the cave, in which lies the Amethyst Vault.','./images/cave.png')" onmouseout="hideTooltip()">
+                    <area class="map-pointer" shape="circle" coords="900,700,160" onmouseover="showTooltip(event, 'Lake', 'The Sapphire Lake is a vast, tranquil expanse of deep blue waters that spans across the heart of Dans l&acute;Ombre. Its surface shimmers with an ethereal glow, reflecting the stars above and the secrets below.', './images/lake.png')" onmouseout="hideTooltip()">
+                    <area class="map-pointer" shape="circle" coords="1100,600,130" onmouseover="showTooltip(event, 'Village', 'Nestled in Duckstone island, the Duck Village is a quirky, serene settlement where the inhabitants are... well, ducks. The ducks waddle about, living simple but curious lives. The village is strangely lively, with ducks chattering and waddling in perfect harmony.','./images/village.png')" onmouseout="hideTooltip()">
+
+                </map>
+                
+                <div id="tooltip" class="tooltip"></div>
+
+                
+                    <div class="CHARACTERS">
+                        <div><h2 class="chartitle texti">CHARACTERS</h2></div><br><br>
+                        
+                        <h3 class="Charr texti">CHARLOTTE</h3>
+
+                        <div class="charlotte texti"> <br>
+                            <p class="chartext texti">She is on a journey to rediscover the pieces of her forgotten past. As she navigates through her lost records and false truths, she faces the challenge of reconnecting with who she is going to be and discovering who she is destined to be.</p>
+                        
+                        </div>
+
+                        <img class="char" src="./images/CharlotteDefault(1) 1.png"> 
+
+                        
+                    
+            
+                        <br>
+                        <div class="Squack">
+                            <h3 class="Squack texti">SQUACK</h3> 
+                            <br>
+                            <p class="texti">Charlottes' best Friend and best DUCK??!! Charlotte has the most amazing best friend in the world, but what makes this friendship even more unique is that her best friend just happens to be the most adorable, clever, and loyal duck you could ever meet!  </p>
+                        </div>
+
+                        <img class="squa" src="./images/Squack.png">
+                        
+                        <div class="Lissette">
+                            <h3 class="Lissette texti">LISETTE</h3> 
+                            <br>
+                            <p class="texti">A friend that Charlotte had. According to her parents, she went to Madrid to finish her studies, but something tells her that she has been away for too many years...</p>
+                        </div>
+
+                        <img class="lisse" src="./images/lissette.png">
+                        
+                        <br><br><br><br>
+
+                    </div>
+                
+
+                
+                <div class="SECTITTLE">
+
+
+                    <h2 class="playabilit texti">PLAYABILITY</h2>
+                    <p class="wordss texti">Charlotte won’t be alone in her  adventure. Squawk, a creature that  has the sense of observation, will be her faithful company. Squawk helps Charlotte by providing information about enemies, and will be essential to overcome obstacles and discover the world’s hidden secrets.</p>
+                    <br>
+                    <p class="texti">In exchange for Charlotte's help, Squawk hopes that she will manage to save the life of his own, causing an extra layer of tension and collaboration between the two.</p>
+                    <img class="tuto" src="./images/1.png">
+                    <img class="tuto" src="./images/2.png">
+
+                </div>
+                
+                <div class="Contactus">
+                    <h2 class="contactus_">CONTACT US!</h2>
+                </div>
+                
+                <div class="Contact">
+                    
+                    <a href="tel:+1234567890">
+                        <img class="phone" src="./images/image 11.png">
+                    </a>
+
+                    
+                    
+                    <br><br><br><br><br><br><br><br>
+                
+                    <p class="number texti">639 161 577</p>  <br><br><br><br><br><br><br><br>
+                    
+                    <a href="mailto:quacksonstudio@gmail.com?subject=Hello&body=Hi%20there!">
+                        <img class="mail" src="./images/image 12.png">
+                    </a> <br><br><br><br>
+                    
+                    <p class="thunderbird texti" >quacksonstudio@gmail.com</p>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank"> 
+                        <img class="instagram" src="./images/Instagram.png"> 
+                    </a>
+                
+                    <a href="https://x.com/QuacksonStudios"  target="_blank">  
+                        <img class="x" src="./images/X-Logo.png">
+                    </a>
+
+
+                    <a href="https://www.youtube.com/@QuacksonStudio"  target="_blank">
+                        <img class="utube" src="./images/Youtube_logo.png">
+                    </a>
+
+                    <a href="https://www.facebook.com/people/Quack-Son/pfbid0cNaDLzyTTXzWWXWsJrhxQPV1eCSL4xiQqThDM4JgUkZRVfe7CmYe5TawvMQdvZjSl/" target="_blank">
+                        <img class="facebook" src="./images/facebook2.png">
+                    </a>
+
+                </div>
+
+            </div>
+        
+
+        <script src="./javascript/script.js"></script>
+
+        <script src="./javascript/map.js"></script>
+
+        
+        <script src="./javascript/sidebar.js">
+        </script>
+        
+
+    </body>
+</html>

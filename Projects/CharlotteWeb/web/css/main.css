@@ -1,0 +1,421 @@
+/* Generamos las variables para aplicar todas las fuentes */
+@font-face {
+    font-family: 'CuteNotes';
+    src: url('../fonts/Cute\ Notes.ttf') format('truetype');
+    font-weight:1000;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Itim';
+    src: url('../fonts/Itim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'King';
+    src: url('../fonts/KIN668.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* hacer que las letras tiemblen */
+@keyframes tembleque1 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes tembleque2 {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(3px); }
+    40% { transform: translateY(-3px); }
+    60% { transform: translateY(3px); }
+    80% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes tembleque3 {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+    60% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes tembleque4 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(7px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes tembleque5 {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-3px); }
+    80% { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+}
+
+/* Aplicamos formatos en los estilos generales para todas las clases */
+h1 {
+    font-size:44px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+}
+body {
+    background-color: #CD92F2;
+    color: white;
+    margin:0px;
+    width:vh;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    font-size: 38px;
+    font-family: 'King', sans-serif;
+}
+
+/* Aplicamos formatos concretos para las diferentes clases espefíficas */
+header.main{
+    position: sticky;
+    margin: 0px;
+    width: 100vw;
+    background-color: #490080;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+video.title {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+h1.title{
+    font-size:92px;
+    z-index: +1;
+    color:aliceblue;
+    font-family:'CuteNotes';  
+    display: inline-block;
+    letter-spacing: -35px;
+}
+
+.title span {
+    display: inline-block;
+}
+
+span.tembleque1{    animation: tembleque1 3s ease-in-out infinite;}
+span.tembleque2{    animation: tembleque2 3s ease-in-out infinite;}
+span.tembleque3{    animation: tembleque3 3s ease-in-out infinite;}
+span.tembleque4{    animation: tembleque4 3s ease-in-out infinite;}
+span.tembleque5{    animation: tembleque5 3s ease-in-out infinite;}
+
+div.h1title{
+    position:relative;
+    margin:auto;
+}
+h1.subtitle{
+    margin: 100px 0px 100px 100px;
+    font-size:56px;
+    font-family: 'King', sans-serif;
+
+}
+div.subtitle{
+    background-color: #111;
+    margin:-32px 0px 0px 0px;
+    padding: 10px;
+}
+div.download_button {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background-color: #490080;
+    border-radius: 60px;
+    max-width: 40vw;
+    margin:auto;
+}
+p.download_button{
+    text-align: center;
+    font-family: 'Itim', sans-serif;
+    font-weight: 1000;
+}
+img.img_l {
+    max-width: 40vw;
+    height: auto;
+    margin: 20px 50px;
+    float: left;
+    border-radius: 25px;
+}
+img.img_r{
+    max-width: 40vw;
+    height:auto;
+    margin:20px 50px, black;
+    float:right;
+    border-radius: 25px;
+}
+div.main {
+    margin: 100px auto;
+    text-align: center;
+    width: 90vw;
+}
+
+div.text {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: auto;
+    width: 90vw;
+    margin-bottom: 100px; 
+    gap: 40px; 
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 500px; 
+}
+
+h1.text {
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
+p.text {
+    font-size: 28px;
+}
+footer{
+    background-color:rebeccapurple;
+    width: 100%;
+    margin:0px;
+    box-sizing:border-box;
+}
+h1.aboutus {
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 88px;
+    margin: 0px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10vw;
+    position: relative; 
+}
+img.logo {
+    width: 10vw;
+    height: auto;
+    margin: 0 0 0 50px;
+    display: block;
+}
+img.pfp{
+    width: 90%;
+    margin:auto;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+div.team{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 100px; 
+    max-width:1500px;
+    width: 100vw;
+    margin:auto;
+    overflow-x:auto;
+}
+div.pfp{
+    overflow: hidden;
+    text-align: center;
+}
+h2.pfp{
+    font-size: 36px;
+    font-weight: 900px;
+    color: white;
+}
+p.pfp{
+    font-size: 32px;
+    color: white;
+}
+.Merch_text {
+    margin: 10px;
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+.card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #555;
+}
+span.offer {
+    color: #FF3B3B;
+}
+div.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* barra lateral */
+.sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 10;
+  }
+  .sidebar a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+  .open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  #mainidk {
+    transition: margin-left 0.3s;
+    padding: 16px;
+  }
+  div.hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 10;
+  }
+  img.hover{
+    width: 50px;
+    height: 50px;
+    filter:invert(100%);
+    margin:25px ;
+  }
+  img.item{
+    margin:0px 25px 25px 25px;
+    width: 200px;
+    height: auto;
+  }
+  div.item{
+    width:250px;
+    background-color: #490080;
+    border-top:#111 5px solid;
+    border-bottom:#111 5px solid;
+  }
+  div.ourstuff {
+    background-color:#490080;
+}
+h1.ourstufftext {
+    text-align: center;
+    font-size: 150px;
+    color: white;
+}
+div.mug {
+    width: 500pz;
+    max-width: 40vw;
+}
+div.t-shirt {
+    width: 600px;
+    font-size: 38px;
+}
+img.plushy {
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+div.plushies  {
+    display: flex;
+    background-image: url('../images/charlotte_plushies.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur (5px);
+    z-index: -1;
+    margin: auto;
+}
+.promo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 15px; /* Espacio entre la imagen y el texto */
+}
+.mug {
+    width: 50%;
+    height: auto;
+    max-width: 40vw;
+    height: auto;
+    margin: 20px, 50px;
+    float: right;
+}
+.promo_img_l {
+    width: 520px;
+    height: 438px;
+    max-width: 40vw;
+    height: auto;
+    margin: 20px, 50px, 30px, 40px;
+    float: left;
+}
+.promo_img_r {
+    width: 520px;
+    height: 438px;
+    max-width: 40vw;
+    height: auto;
+    margin: 20px, 50px;
+    float: right;
+}
+
+.promo-text { /* Aplica la fuente al texto */
+    font-size: 28px;
+    text-align:left;
+    margin-left: 30px;
+}
+.shirt-title {
+    font-size: 45px;
+    text-align: center;
+    font-family: 'King';
+}
+.promo-centered {
+    text-align: center;
+}
