@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"futbolmanager","l":"Entrenador"},{"p":"futbolmanager","l":"Equip"},{"p":"futbolmanager","l":"Jugador"},{"p":"futbolmanager","l":"Lliga"},{"p":"futbolmanager","l":"Main"},{"p":"futbolmanager","l":"Persona"}];updateSearchResults();
