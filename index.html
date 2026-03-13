@@ -3,31 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Proyectos | N. Felipe Vaquero</title>
+    <title>Nicolás Felipe | Portfolio XP</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
-    <main class="split-container">
-        <a href="https://nfelipevaquero.github.io/CharlotteWeb/" class="split left">
-            <div id="shader-charlotte" class="shader-canvas"></div>
-            <div class="content">
-                <span class="tag">Diseño Web</span>
-                <h1>Charlotte Web</h1>
-                <div class="btn">Explorar</div>
-            </div>
-        </a>
 
-        <a href="https://nfelipevaquero.github.io/Protectora/" class="split right">
-            <div id="shader-protectora" class="shader-canvas"></div>
-            <div class="content">
-                <span class="tag">Proyecto Social</span>
-                <h1>Protectora</h1>
-                <div class="btn">Entrar</div>
+<div id="desktop">
+    <div class="shortcut" onclick="openWin('win-bio')">
+        <img src="https://win98icons.alexmeub.com/icons/png/notepad-5.png">
+        <span>Biografía.txt</span>
+    </div>
+    <div class="shortcut" onclick="openWin('win-pro')">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png">
+        <span>Mis Proyectos</span>
+    </div>
+    <div class="shortcut" onclick="openWin('win-log')">
+        <img src="https://win98icons.alexmeub.com/icons/png/world-3.png">
+        <span>Historial.log</span>
+    </div>
+    <div class="shortcut">
+        <a href="https://drive.google.com/file/d/1lEcS71Ls3vj9LqAYNr3rVe1UsTYtGxqT/view?usp=sharing"><img src="https://win98icons.alexmeub.com/icons/png/message_file-0.png"></a>
+        <a href="https://drive.google.com/file/d/1lEcS71Ls3vj9LqAYNr3rVe1UsTYtGxqT/view?usp=sharing"><span>CV.pdf</span></a>
+    </div>
+        <div class="shortcut">
+        <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/"><img src="https://win98icons.alexmeub.com/icons/png/html-5.png"></a>
+        <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/"><span>LinkedIn</span></a>
+    </div>
+    <div id="win-bio" class="window" style="top:20px; left:40px; width:550px;">
+        <div class="title-bar">
+            <div class="title-caption">
+                <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" width="16">
+                <span>Biografía.txt - Bloc de notas</span>
             </div>
-        </a>
-    </main>
-    <script src="script.js"></script>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-bio')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-bio')"></button>
+                <button class="btn-close" onclick="closeWin('win-bio')">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="content-text">
+                <h1>Nicolás Felipe</h1>
+                <p><strong>📍 ESTADO:</strong> Estudiante de 1º de DAM (Desarrollo de Aplicaciones Multiplataforma)</p>
+                <p><strong>🛠️ PERFIL:</strong> Técnico en SMR (Sistemas Microinformáticos y Redes)</p>
+                <hr class="win-hr">
+                <p>Me defino como un entusiasta de la tecnología con una base sólida en infraestructura y hardware gracias a mi formación en SMR. Tras dominar el funcionamiento físico de los sistemas, he dado el paso al desarrollo para crear soluciones lógicas y funcionales.</p>
+                <p><strong>🚀 MI CAMINO:</strong> Actualmente sumergido en los fundamentos de la programación, dominando Java y la lógica de objetos. Busco la eficiencia en el código y la limpieza en el diseño.</p>
+                <p><strong>🎯 OBJETIVO:</strong> Ser un desarrollador Full-Stack capaz de gestionar desde el servidor hasta la interfaz final.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="win-pro" class="window" style="top:100px; left:350px; width:520px;">
+        <div class="title-bar">
+            <div class="title-caption">
+                <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-0.png" width="16">
+                <span>C:\Mis_Documentos\Proyectos</span>
+            </div>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-pro')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-pro')"></button>
+                <button class="btn-close" onclick="closeWin('win-pro')">×</button>
+            </div>
+        </div>
+        <div class="explorer-toolbar">
+            <div class="tool-item">Archivo</div><div class="tool-item">Edición</div><div class="tool-item">Ver</div><div class="tool-item">Ayuda</div>
+        </div>
+        <div class="window-body">
+            <div class="proyectos-container">
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><a style=color:black; href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/Virtual_pet/src"><strong>Tamagochi: </strong> Simulador de mascota virtual.</a></div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><a style=color:black; href="https://github.com/nfelipevaquero/Portfolio/tree/main/Projects/QUIZProtectora/src"><strong>Quiz Mascotas:</strong> Quiz con preguntas de diversos animales para la adopción de una mascota.</a></div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="java-icon"></div>
+                    <div class="p-text"><a style=color:black; href="https://nfelipevaquero.github.io/Projects/Football manager"><strong>Football Manager:</strong></a> Gestión de estados y POO avanzada en Java.</div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://win98icons.alexmeub.com/icons/png/game_solitaire-0.png" width="32"></div>
+                    <div class="p-text"><a style=color:black; href="https://quackson-studio.itch.io/remember-me-charlotte"><strong>Remember me Charlotte:</strong> Videojuego creado por un equipo de 4 personas utilizando el motor de Pygame (Python).</a></div>
+                </div>
+                <div class="p-item">
+                    <div class="p-icon-wrapper"><img src="https://win98icons.alexmeub.com/icons/png/accesibility_window_abc.png" width="32"></div>
+                    <div class="p-text"><a style=color:black; href="https://nfelipevaquero.github.io/WebMenu/"><strong>Galería web:</strong> Página web creada por el equipo de desarrollo de Remember me Charlotte.</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="win-log" class="window" style="top:320px; left:180px; width:420px;">
+        <div class="title-bar">
+            <div class="title-caption"><span>🌐 Historial.log</span></div>
+            <div class="controls">
+                <button class="btn-min" onclick="minimizeWin('win-log')"></button>
+                <button class="btn-max" onclick="maximizeWin('win-log')"></button>
+                <button class="btn-close" onclick="closeWin('win-log')">×</button>
+            </div>
+        </div>
+        <div class="window-body terminal">
+            <div class="log-row">> [OK] Coffee Engine: v2.0.1 Stable</div>
+            <div class="log-row">> [INFO] Dev: Nicolás coding...</div>
+            <div class="log-row" style="color:#0f0">> [SUCCESS] Ready to build.</div>
+        </div>
+    </div>
+
+    <div id="start-menu">
+        <div class="s-header">
+            <img src="https://win98icons.alexmeub.com/icons/png/user_computer-0.png" width="34">
+            <span>Nicolás Felipe</span>
+        </div>
+        <div class="s-body">
+            <div class="s-sidebar"><div class="s-sidebar-text">Windows<span>XP</span></div></div>
+            <div class="s-main-content">
+                <div class="s-left">
+                    <div class="s-item" onclick="openWin('win-bio')"><img src="https://win98icons.alexmeub.com/icons/png/notepad-4.png"> Biografía</div>
+                    <div class="s-item" onclick="openWin('win-pro')"><img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-0.png"> Proyectos</div>
+                    <div class="s-item" onclick="openWin('win-log')"><img src="https://win98icons.alexmeub.com/icons/png/world-3.png"> Historial</div>
+                    <a href="https://drive.google.com/file/d/1lEcS71Ls3vj9LqAYNr3rVe1UsTYtGxqT/view?usp=sharing"><div class="s-item"><img src="https://win98icons.alexmeub.com/icons/png/file_lines-0.png"> CV</div></a>
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-felipe-vaquero-561717313/"><div class="s-item"><img src="https://win98icons.alexmeub.com/icons/png/html2-3.png"> LinkedIn</div></a>
+                </div>
+                <div class="s-right">
+                    <div class="s-item" onclick="location.reload()"><img src="https://win98icons.alexmeub.com/icons/png/shut_down_normal-0.png"> Apagar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="taskbar">
+    <button class="start-btn" onclick="toggleStart()">
+        <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" width="18">
+        <span>inicio</span>
+    </button>
+    <div id="tabs-container"></div>
+    <div class="tray"><span id="clock">00:00</span></div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
